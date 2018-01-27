@@ -1,16 +1,16 @@
 # coding:utf-8
 # author:xiaofeng
-import pytesser3
+import pytesseract
 from PIL import Image
 
 
-filepath = 'C:/DDD/soft/git/mygithub/py3_learning20180120/验证码识别/codeimg'
+filepath = './codeimg/'
 
 
-image = Image.open('1.jpg')
+image = Image.open(filepath + '6.jpg')
+image.show()
 
-text = pytesser3.image_file_to_string('1.jpg')
-text1 = pytesser3.image_to_string(image)
+# text1 = pytesseract.image_to_string(image, lang='chi_sim+eng+equ+osd')
 
-print(text)
-print(text1)
+# print(text)
+# print(text1)
