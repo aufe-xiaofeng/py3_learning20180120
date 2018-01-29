@@ -12,7 +12,7 @@ cursor = db.cursor()
 # 使用 execute() 方法执行 SQL，如果表存在则删除
 cursor.execute("drop table if EXISTS employee")
 
-# # 使用预处理语句创建表
+# 使用预处理语句创建表
 sql = """CREATE TABLE EMPLOYEE (
          FIRST_NAME  CHAR(20) NOT NULL,
          LAST_NAME  CHAR(20),
